@@ -1,0 +1,158 @@
+/* ====== Base Styling ====== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #2b2a2a;
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* ====== Particles Background ====== */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f0f0f;
+  z-index: -2;
+}
+
+/* ====== Lottie Animation Placement ====== */
+#main-lottie-animation {
+  width: 250px;
+  height: 250px;
+  margin: 2rem auto 1rem;
+  z-index: 1;
+}
+
+/* ====== Section Containers ====== */
+.section {
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in;
+}
+
+/* ====== Headings ====== */
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease;
+}
+
+/* ====== About Section ====== */
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  animation: fadeIn 1s ease-in;
+}
+
+/* ====== Skills & Services ====== */
+.tags, .services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.tag, .service {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 0.6rem 1.2rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+.tag:hover, .service:hover {
+  transform: scale(1.05);
+}
+
+/* ====== Links Section ====== */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  animation: fadeInUp 1.2s ease;
+}
+
+.links a {
+  text-decoration: none;
+  color: #00acee;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.links a:hover {
+  color: #ffdd57;
+  text-shadow: 0 0 10px rgba(255, 221, 87, 0.6);
+}
+
+/* ====== Contact Form Styling ====== */
+.form-container iframe {
+  display: block;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 600px;
+  height: 600px;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ====== Animations ====== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+.resume-box {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  background-color: #00acee;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 172, 238, 0.4);
+}
+
+.download-btn:hover {
+  background-color: #008bb9;
+  box-shadow: 0 6px 20px rgba(0, 172, 238, 0.6);
+}

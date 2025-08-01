@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koustab | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script.js"></script>
+  <!-- AOS CDN -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+  <!-- Intro Animation Section -->
+  <section id="intro">
+    <div class="intro-content fade-in"></div>
+    <div id="particles-js"></div>
+    <div id="laptop-animation"></div>
+    <div class="intro-content">
+      <p class="typing"></p>
+      <img src="Profile picture.jpg" alt="Profile" class="profile-img" />
+      <h1>KOUSTAB MUKHERJEE</h1>
+      <p class="enter-text">Press ENTER to continue</p>
+    </div>
+  </section>
+  <script>
+    var typed = new Typed('.typing', {
+  strings: ['Aspiring Full Stack Developer', 'Java, Spring Boot', 'DBMS'],
+  typeSpeed: 60,
+  backSpeed: 30,
+  loop: true
+});
+
+    particlesJS.load('particles-js','particles.json',function(){
+      console.log('particles.js loaded');
+    });
+  </script>
+
+  
+
+</body>
+</html>

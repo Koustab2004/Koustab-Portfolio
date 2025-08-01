@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koustab | Portfolio</title>
+  <link rel="stylesheet" href="MainStyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+</head>
+<body>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+  <!-- Lottie Animation -->
+  <div id="main-lottie-animation"></div>
+
+  <!-- About -->
+  <section class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="about-text">
+      <p>Hello! I'm <strong>Koustab Mukherjee</strong>, a passionate full stack developer with a strong foundation in Java, Spring Boot, and modern web technologies. I enjoy crafting clean, responsive websites and robust backend solutions. I’m constantly learning and pushing my skills to deliver impactful digital experiences.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="tags">
+      <div class="tag">HTML</div>
+      <div class="tag">CSS</div>
+      <div class="tag">JavaScript</div>
+      <div class="tag">Java</div>
+      <div class="tag">Spring Boot</div>
+      <div class="tag">MySQL</div>
+      <div class="tag">Git</div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" data-aos="zoom-in">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="service">Website Design</div>
+      <div class="service">Full Stack Web Development</div>
+      <div class="service">Backend API (Java + Spring Boot)</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Library Management System</h3>
+        <p>A console-based Java application simulating book borrowing/return using OOP, packages, and exception handling.</p>
+        <a href="https://github.com/koustab2004/library-management" target="_blank" rel="noopener noreferrer">View Code</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This personal portfolio, built using HTML, CSS, JavaScript, AOS, Lottie, and particles.js for smooth transitions.</p>
+        <a href="https://github.com/koustab2004/portfolio" target="_blank" rel="noopener noreferrer">View Code</a>
+      </div>
+      <div class="project-card">
+        <h3>Spring Boot REST API</h3>
+        <p>RESTful backend API for managing users and tasks. Built using Spring Boot, MySQL, and layered architecture.</p>
+        <a href="https://github.com/koustab2004/spring-boot-api" target="_blank" rel="noopener noreferrer">View Code</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section class="section" data-aos="fade-left">
+    <h2>Resume</h2>
+    <div class="resume-box">
+      <p>You can download my updated resume below:</p>
+      <a href="Koustab_Mukherjee_CV.pdf" download class="download-btn">Download CV</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" data-aos="flip-up">
+    <h2>Contact Me</h2>
+    <div class="form-container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSexP5eZt-Q37HZeBuNFb_27sXNEp9EJ7cxOXb1LH51NoW8RCw/viewform?usp=preview" allowfullscreen>Loading…</iframe>
+    </div>
+  </section>
+
+  <!-- Social Links -->
+  <section class="section" data-aos="fade-up">
+    <h2>Find Me Online</h2>
+    <div class="links">
+      <a href="https://github.com/koustab2004" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/koustab-mukherjee" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:koustabmukherjee6296@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+  <script>
+    const anim = lottie.loadAnimation({
+      container: document.getElementById("main-lottie-animation"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "laptop.json" // Replace if needed
+    });
+  </script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 70 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.2, width: 1 },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          grab: { distance: 200, line_linked: { opacity: 0.4 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
