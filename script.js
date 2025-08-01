@@ -11,16 +11,20 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("✅ Animation loaded:", animation);
 });
 // Detect ENTER key to switch sections
-document.addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
+function goToPortfolio() {
     window.location.href = "Main.html";
-    document.body.classList.add("fade-out");
+  }
 
-    setTimeout(()=>{
-     document.getElementById("intro").style.display = "none";
-     document.getElementById("main-portfolio").classList.remove("hidden")
-      
-    },1000);
-    
+  // ENTER key for desktop
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      goToPortfolio();
+    }
+  });
+
+  // Mobile button click (inside DOMContentLoaded to ensure element exists)
+  const enterBtn = document.getElementById("enter-btn");
+  if (enterBtn) {
+    enterBtn.addEventListener("click", goToPortfolio);
   }
 });
