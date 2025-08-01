@@ -6,6 +6,23 @@ body.fade-out {
   color: white;
   animation: fadeout 1s forwards;
 }
+.mobile-enter-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #00acee;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.mobile-enter-btn:hover {
+  background-color: #007bb6;
+}
+
 
 #intro {
   height: 100vh;
